@@ -1,0 +1,125 @@
+/* -------------- font google --------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Navbar Styles */
+.navbar-area {
+    background-color: #ffffff; /* White background for the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+}
+ 
+.navbar-area.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Darker shadow on scroll */
+}
+ 
+.navbar-nav .nav-link {
+    color: #333;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+ 
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Accent color on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+ 
+/* Add a smooth transition for the active link */
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+ 
+/* Add smooth animation to the navbar-toggler */
+.navbar-toggler {
+    transition: all 0.3s ease-in-out;
+}
+ 
+.navbar-toggler-icon {
+    background-image: url('path/to/hamburger-icon.png'); /* Ensure the icon is styled appropriately */
+}
+ 
+/* Optional: Enhance the hover effect for dropdowns */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; /* Smooth dropdown appearance */
+}
+
+/* ----------- global ---------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: #747e74;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #38424d;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #747e74;
+    margin: 0;
+}
+
+span {
+    display: contents;
+    color: #fe5f59;
+}
+/* ------------ all button css ---------- */
+
+.main-btn {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 55px;
+    border: 2px solid #0898ef;
+    border-radius: 5px;
+    background-color: #0898ef;
+    color: #fff;
+}
+
+.main-btn:hover {
+    background-color: rgba(8, 152, 231, .7);
+    color: #fff;
+    border-color: transparent;
+}
+

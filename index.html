@@ -1,185 +1,321 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Duta Solusi Informatika</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSI COMPANY PROFILE</title>
+    <!-- Bootstrap css -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style css-->
+     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- header-->
-    <header class="bg-blue-900 sticky top-0">
-      <nav class="text-white w-11/12 md:container mx-auto py-4 flex justify-between items-center">
-        <div class="flex items-center">
-          <a href="index.html"><img src="assets/DSI Logo.jpg" alt="Logo" class="h-8 mr-2"></a>
-          <a href="" class="text-3xl font-bold">DSI COMPANY</a>
-        </div>
-        <ul class="menu hidden md:flex md:bg-blue-900 md:relative md:top-0 md:divide-y-0 md:w-auto">
-          <li class="px-5 py-1 hover:text-red-500"><a href="#services">Services</a></li>
-          <li class="px-5 py-1 hover:text-red-500"><a href="#partnership">Product</a></li>
-          <li class="px-5 py-1 hover:text-red-500"><a href="#about">About</a></li>
-          <li class="px-5 py-1 hover:text-red-500 md:hover:text-white"><a href="" class="md:border-2 md:border-yellow-500 md:py-2 md:px-5 md:rounded-xl md:hover:bg-red-500 text-white">Getting Started</a></li>
-        </ul>
-        <button class="hamburger-menu text-2xl md:hidden">
-          <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-xmark hidden"></i>
-        </button>
-      </nav>
-    </header>
+   <!-------   Header star ------>
+  <header class="header-area">
+    <div class="navbar-area">
+      <!---- navbar star--->
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="image" src="assets/img/header/logo/Logo DSI 1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" data-scroll-nav="0" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="2" href="#">Kenapa DSI?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="3" href="#">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="4" href="#">Tampilan</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="5" href="#">Kontak Kami</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-scroll-nav="6" href="#">Join Us</a>
+                </li>
 
-<!-- hero -->
-<section class="bg-gray-900">
-  <div class="container mx-auto text-center text-white h-screen flex items-center">
-    <div class="mx-auto w-3/4 md:w-2/4">
-      <h3 class="text-5xl font-bold text-center mb-5 animate-fall">Duta Solusi Informatika</h3>
-      <p class="text-gray-500 mb-5">Taking You To The Next Level and Beyond</p>
-      <a href="profile.html" class="bg-red-500 text-white py-2 px-5 rounded-xl hover:bg-red-800">Profile Company</a>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
-  </div>
-</section>
-
-
-<!-- WhatsApp Button -->
-<button class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl animate-shake hover:bg-green-700" onclick="window.location.href='https:wa.link/da8ffm'">
-<i class="fab fa-whatsapp"></i>
-</button>
-
-<!-- Include Font Awesome for WhatsApp Icon -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-    <!-- services -->
-    <section id="services" class="bg-gray-200 py-20">
-      <div class="w-11/12 md:container mx-auto">
-        <h3 class="text-5xl font-bold text-center mb-5">Our Services</h3>
-        <p class="text-gray-500 text-center mb-5"></p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- service 1-->
-          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="assets/analis.jpeg" width="100" height="100"/>
-            <div>
-              <h4 class="text-2xl font-bold mb-5">Data Analytics</h4>
-              <p class="text-gray-500 mb-5">Deskripsi Singkat</p>
-              <a href="service/analis.html" class="hover:text-gray-500">read more</a>
+    <!---- navbar end--->
+    <div class="header-hero" data-scroll-index="0">
+         <!---- home star ------>
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-between">
+          <div class="col-lg-6 col-md-10">
+            <div class="header-hero-content">
+              <h1 class="header-title wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.2s"><span>Website</span>DSI</h1>
+              <p class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Aspernatur fugiat qui tenetur sit vero delectus vitae suscipit nostrum
+                aliquam exercitationem necessitatibus veniam placeat, voluptatibus harum.</p>
+             
             </div>
           </div>
-
-          <!-- service 2-->
-          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="assets/Customer.png" width="100" height="100" />
-            <div>
-              <h4 class="text-2xl font-bold mb-5">Social Media Assistant</h4>
-              <p class="text-gray-500 mb-5">Beriut adalah Sosial Media dan Contact Person Kami</p>
-              <a href="service/socialmedia.html" class="hover:text-gray-500">read more</a>
-            </div>
-          </div>
-
-          <!-- service 3-->
-          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="assets/Developer.png" width="100" height="100" />
-            <div>
-              <h4 class="text-2xl font-bold mb-5">Developer & Maintenance</h4>
-              <p class="text-gray-500 mb-5">Deskripsi Singkat</p>
-              <a href="service/developer.html" class="hover:text-gray-500">read more</a>
-            </div>
-          </div>
-
-          <!-- service 4-->
-          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
-            <img src="assets/protej.jpg" width="100" height="100" />
-            <div>
-              <h4 class="text-2xl font-bold mb-5">24/7 Protection</h4>
-              <p class="text-gray-500 mb-5">Deskripsi Singkat</p>
-              <a href="service/protection.html" class="hover:text-gray-500">read more</a>
+          <div class="col-lg-3 col-md-6">
+            <div class="header-image">
+              <img src="assets/img/header/header-app.png" alt="" class="image-1  wow fadeInRightBig"
+                data-wow-duration="3s" data-wow-delay="0.5s">
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="container">
+        <div class="header-shape-1"></div>
+        <div class="header-shape-2">
+          <img src="assets/img/header/header-shape-2.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <!---- home star ------>
+  </header>
+  <!--------   Header End ----  -->
 
-    <!-- portofolio -->
-    <section id="partnership" class="py-20 bg-white">
-      <h3 class="text-3xl font-bold text-center mb-5">PRODUCT PT DUTA SOLUSI INFORMATIKA</h3>
+  <!-- ------- Feature Section Start ---------- -->
+  <section class="feature-section pt-80" data-scroll-index="1">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7">
+          <div class="section-title text-center mb-30">
+            <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s">Fitur <span></span></h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat quo obcaecati
+              excepturi, iste nisi.</p>
+          
+      </div>
+    </div>
+  </section>
+  <!-- ------- Feature Section End ---------- -->
+
+  <!-- ----------- Kenapa DSI Section Start --------- -->
+  <section class="kenapaDSI?-area pt-70 pb-120" data-scroll-index="2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="mb-25  wow fadeInUp" data-wow-delay=".2s">KENAPA DSI <span></span></h1>
+          
+        </div>
+        
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nobis aperiam tenetur
+                aspernatur. Dolor nostrum hic impedit cupiditate iure beatae doloribus, obcaecati deleniti dignissimos
+                in?</p>
+            
+            
+          </div>
+        </div>
      
-      <p class="text-gray-500 mb-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, iure.</p>
-      <div class="grid grid-cols-2 md:grid-cols-4 w-11/12 md:container mx-auto gap-6">
-        <!-- portofolio 1-->
-        <div class="shadow-xl">
-          <a href="portofolio/erp.html">
-            <img src="assets/BAHAN WEBSITE/erp.jpg" width="600" height="400" class="w-full" />
-            <div class="py-3 px-5">
-              <h4 class="text-center font-bold">esikat ERP</h4>
-            </div>
-          </a>
+  </section>
+  <!-- ----------- Kenapa DSI Section End --------- -->
+
+  <!-- ----------- Testimonial Section Start ------- -->
+  <section class="testimonial-section" data-scroll-index="3">
+    <div class="container">
+      <div class="row justify-content-center testimonial-active-wrapper">
+        <div class="col-xl-6 col-lg-7">
+          <div class="section-title text-center mb-60">
+            <h1 class="mb-25 text-white wow fadeInUp" data-wow-delay=".2s">Testimoni</h1>
+            <p class="text-white wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Ipsum, repudiandae pariatur deserunt explicabo repellat voluptatibus.</p>
+          </div>
         </div>
-        <!-- portofolio 2-->
-        <div class="shadow-xl">
-          <a href="portofolio/dsiobe.html">
-            <img src="assets/BAHAN WEBSITE/obe.jpg" width="600" height="400" class="w-full" />
-            <div class="py-3 px-5">
-              <h4 class="text-center font-bold">dsi OBE</h4>
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8">
+            <div class="testimonial-active">
+              
+                
+                 
+                    
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              
             </div>
-          </a>
-        </div>
-        <!-- portofolio 3-->
-        <div class="shadow-xl">
-          <a href="portofolio/dsipustaka.html">
-            <img src="assets/Buku.jpg" width="600" height="400" class="w-full" />
-            <div class="py-3 px-5">
-              <h4 class="text-center font-bold">DSI Pustaka</h4>
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-        </div>
-        <!-- portofolio 4-->
-        <div class="shadow-xl">
-          <a href="portofolio/pkbm.html">
-            <img src="assets/BAHAN WEBSITE/pkbm.jpg" width="600" height="400" class="w-full" />
-            <div class="py-3 px-5">
-              <h4 class="text-center font-bold">Sistem PKBM</h4>
-            </div>
-          </a>
-        </div>
-        <!-- portofolio 5-->
-        <div class="shadow-xl">
-          <a href="portofolio/payroll.html">
-            <img src="assets/BAHAN WEBSITE/payroll.png" width="600" height="400" class="w-full" />
-            <div class="py-3 px-5">
-              <h4 class="text-center font-bold">PAYROLL</h4>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- about -->
-    <section id="about" class="w-11/12 md:container mx-auto py-20">
-      <div class="flex space-x-10 items-start">
-        <img src="assets/DSI Logo.jpg" class="w-24 md:w-1/3" />
-        <div>
-          <p class="mb-5">PT DUTA SOLUSI INFORMATIKA</p>
-          <h3 class="text-5xl font-bold mb-5">About Me</h3>
-          <p class="mb-5">Duta Solusi Informatika, atau lebih dikenal dengan DSI adalah perusahaan penyedia Software Bisnis dan Sistem Informasi. Berdiri di Semarang pada tanggal 17 April 2013. Didaftarkan dengan nama CV. Duta Solusi Informatika, beralamat di Perun Klipang Pesona Asri Regency Kav. 188 Kota Semarang 50272.</p>
+  </section>
+  <!-- ----------- Testimonial Section End ------- -->
 
-          <ul class="md:flex md:space-x-5">
-            <li>
-              <a href="https://www.tiktok.com/id-ID/"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/DutaSolusiInformatika"><i class="fa-brands fa-facebook"></i> Facebook</a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i> YouTube</a>
-            </li>
-          </ul>
+  <!-- ------------ Tampilan start--------- -->
+  <div class="pricing-area pt-110" data-scroll-index="4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="xol-xl-6 col-lg-7">
+          <div class="section-title text-center pb-30">
+            <h1 class="wow fadeInUp" data-wow-delay=".2s">Tampilan <span> Kami</span></h1>
+            <p class="wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestias aut maxime repellendus inventore animi laboriosam.</p>
+        
+       
+     
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  
+  <!-- -------------- Tampilan section end ------------ -->
+ 
+  
+  <!-- --------------Kontak kami ------- -->
+  <footer class="footer-area">
+    <div class="footer-shape shape-1"></div>
+    <div class="footer-shape shape-2"></div>
+    <div class="footer-shape shape-3"></div>o
+    <div class="footer-shape shape-4"></div>
+    <div class="footer-shape shape-5"></div>
+    <div class="footer-shape shape-6"></div>
+    <div class="footer-widget pt-30 pb-80">
 
-    <footer class="py-5 text-center font-bold">&copy; PT Duta Solusi Informatika </footer>
+      <section class="faq-section pt-120" data-scroll-index="5"></section>
+       <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about mt-50">
+              <h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s">Kontak Kami <span> DSI</span></h1>
+              <a href="" class="logo">
+                <img src="" alt="">
+              </a>
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat quo obcaecati
+                excepturi, iste nisi.</p>
+              <ul class="social">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-link d-flex flex-wrap">
+              <div class="footer-link-wrapper mt-45">
+                <div class="footer-title">
+                  <h4 class="title">Quick Links</h4>
+                </div>
+                <ul class="link">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Kenapa DSI?</a></li>
+                  <li><a href="">Testimonial</a></li>
+                  <li><a href="">Tampilan</a></li>
+                  <li><a href="">Join Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-link-wrapper mt-45">
+                <div class="footer-title">
+                  <h4 class="title">Support</h4>
+                </div>
+                <ul class="link">
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms OF Use</a></li>
+                  <li><a href="">Legal</a></li>
+                  <li><a href="">Site Map</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-contact mt-45">
+              <div class="footer-title">
+                <h4 class="title">Quick Links</h4>
+              </div>
+              <ul class="contact-list">
+                <li>
+                  <div class="contact-info">
+                    <div class="info-content media-body">
+                      <p class="text"><i class="fas fa-phone-alt"></i>
+                        +62xxxxxxxxxxx </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-info">
+                    <div class="info-content media-body">
+                      <p class="text"><a href=""><i class="far fa-envelope"></i>
+                          Dutasolusiinformatika@gmail.com </a></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-info">
+                    <div class="info-content media-body">
+                      <p class="text"><a href=""><i class="fas fa-globe"></i>
+                          www.DSI.com </a></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-info">
+                    <div class="info-content media-body">
+                      <p class="text"><i class="fas fa-map-marker-alt"></i>
+                        Alamat kantor DSI </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="lo-lg-12">
+            <div class="copyright">
+              <div class="copyright-text text-center">
+                <p class="text">Copyright &#169; 2024 <a href="">DSI</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- --------------Footer Section End ------- -->
 
-    <script src="script.js"></script>
-  </body>
+
+
+
+
+  <!-- ---- jquery Js ---- -->
+  <script src="Js/jquery-1.12.4.min.js"></script>
+  <!-- ---- Bootstrap Js ---- -->
+  <script src="Js/bootstrap.min.js"></script>
+  <!-- ---- main js --- -->
+  <script src="Js/main.js"></script>
+</body>
+
 </html>

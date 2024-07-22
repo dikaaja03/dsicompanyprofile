@@ -1,0 +1,12 @@
+.hero {
+    background: url('assets/etikaa-hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero .btn {
+    margin-top: 20px;
+  }
